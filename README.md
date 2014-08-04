@@ -74,8 +74,7 @@ var user_mode = {
 whisker.map(user_mode);
 // Old mappings will be overwritten without error
 ```
-If not overwritten, old mappings will persist on a per-key basis.  That means that as long as 
-a keys are not overwritten, you can use several mappings!
+If not overwritten, old mappings will persist on a per-key basis.  That means that as long as keys are not overwritten, you can use several mappings!
 
 ### Unmapping
 
