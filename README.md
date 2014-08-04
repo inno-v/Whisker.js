@@ -7,7 +7,7 @@ Quick, light, and easy way to fasten the keyboard to your page.
 
 # Usage
 
-##### Connect Whisker document-wide with jQuery:
+##### Connect Whisker to the document:
 ```javascript
 $(document).ready(function(){
 	var whisker = Whisker();
