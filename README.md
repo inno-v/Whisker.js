@@ -40,6 +40,23 @@ var user_mode = {
 	},
 }
 whisker.map(user_mode);
+// Old mappings will be overwritten without error
+```
+
+### Unmapping
+
+Just pass an object with the appropriate keys:
+```Javascript
+// This will undo the mapping from the example above
+whisker.unmap(user_mode);
+
+// Or
+whisker.unmap({
+	onkeydown : {
+		'enter' : '',
+	}
+});
+// No error for unmapping a key that wasn't mapped
 ```
 
 # Behavior
