@@ -1,8 +1,8 @@
 # Whisker.js
 
 Quick, light, and easy way to fasten the keyboard to your page.
+* Fast and responsive!
 * Little overhead!
-* Less than 100 lines!
 * No more looking up key codes!
 	- Checkout [Whisker's convention](https://github.com/JrFolk/Whisker.js/blob/master/keymap.js)
 
