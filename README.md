@@ -21,10 +21,15 @@ keymap = {
 	}
 }
 
-// Bind keys
+// Methods
 whisker.map(keymap);
-whisker.
-
+whisker.unmap(keymap);
+whisker.pause();
+whisker.resume();
+whisker.save('scope_name');
+whisker.load('scope_name');
+whisker.clear();
+whisker.clear('scope_name');
 ```
 
 # Usage
