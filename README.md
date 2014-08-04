@@ -16,7 +16,8 @@ $(document).ready(function(){
 });
 ```
 Every invocation of `Whisker();` will create a new Whisker instance.
-You can also connect Whisker like any other event lister, say, to elements such as forms.
+
+You can also connect Whisker like any other event lister, for instance, to elements such as forms.
 
 
 ### Mapping the keyboard
