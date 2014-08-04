@@ -12,13 +12,13 @@ $(document).ready(function(){
 	$(document).on('keyup', whisker);
 });
 ```
+Every invocation of `Whisker();` will create a new Whisker instance.
 You can also connect Whisker like any other event lister, say, to elements such as forms.
 
-Every invocation of `Whisker();` will create a new Whisker instace.
 
 ### Mapping the keyboard
 
-##### Directly with an object literal
+##### Directly with an object literal:
 ```Javascript
 whisker.map({
 	onkeydown : {
@@ -30,7 +30,7 @@ whisker.map({
 });
 ```
 
-##### Passing an object with appropriate `onkeydown` & `onkeyup` properties
+##### Passing an object with appropriate `onkeydown` & `onkeyup` properties:
 ```Javascript
 function enter_pressed(){console.log("Enter pressed!");};
 var user_mode = {
@@ -47,7 +47,7 @@ whisker.map(user_mode);
 
 ### Unmapping
 
-Just pass an object with the appropriate keys:
+##### Just pass an object with the appropriate keys:
 ```Javascript
 // This will undo the mapping from the example above
 whisker.unmap(user_mode);
@@ -61,6 +61,36 @@ whisker.unmap({
 // No error for unmapping a key that wasn't mapped
 ```
 
-# Behavior
+### Pause & Resume
 
-TODO:
+##### Pause Whisker to restore normal behavior without messing with listeners:
+```Javascript
+$('input').on('focusin', whisker.pause);
+$('input').on('focusout', whisker.resume);
+```
+
+### Named Scopes
+
+##### Save and load named scopes:
+```Javascript
+// Switch scopes
+whisker.save('some_scope');
+whisker.load('another_scope');
+// Do some stuff with another scope
+
+whisker.load('non-existant_scope');
+// This will produce a warning in the console without crashing
+```
+##### Clear scopes:
+```Javascript
+// Clear the current scope
+whisker.clear();
+
+// Delete a named scope for memory cleanup
+whisker.clear('another_scope')
+```
+
+# Behavior
+Whisker uses `event.preventDefualt()` on mapped keys so that 'tab' and arrow keys will not change the focus or
+move the view around if and only if Whisker is listening for that key.
+
