@@ -8,12 +8,10 @@ function Whisker(){
 		if(evt.type === 'keydown' && typeof onkeydown[key] === 'function'){
 			evt.preventDefault();
 			onkeydown[key]();
-			return false;
 		}
 		else if(evt.type == 'keyup' && typeof onkeyup[key] === 'function'){
 			evt.preventDefault();
 			onkeyup[key]();
-			return false;
 		}
 	};
 
