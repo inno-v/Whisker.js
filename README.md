@@ -1,5 +1,4 @@
 # Whisker.js
-
 Quick, light, and easy way to fasten the keyboard to your page.
 * Little overhead!
 	- Seriously small, but easy to read
