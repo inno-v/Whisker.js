@@ -52,10 +52,10 @@ whisker.map(user_mode);
 // This will undo the mapping from the example above
 whisker.unmap(user_mode);
 
-// Or
+// Or even
 whisker.unmap({
 	onkeydown : {
-		'enter' : '',
+		'enter' : function(){},// value doesn't have to be a function in this case
 	}
 });
 // No error for unmapping a key that wasn't mapped
@@ -78,7 +78,7 @@ whisker.save('some_scope');
 whisker.load('another_scope');
 // Do some stuff with another scope
 
-whisker.load('non-existant_scope');
+whisker.load('non-existent_scope');
 // This will produce a warning in the console without crashing
 ```
 ##### Clear scopes:
