@@ -95,7 +95,6 @@ whisker.unmap({
 ### Pause & Resume
 
 ##### Pause Whisker to restore normal behavior without messing with listeners:
-Let's say you want to be able to type into an input...
 ```Javascript
 $('input').on('focusin', whisker.pause);
 $('input').on('focusout', whisker.resume);
