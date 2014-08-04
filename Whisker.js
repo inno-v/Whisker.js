@@ -61,7 +61,7 @@ function Whisker(){
 	handler.clear = function clear(scope){
 		if(scope){
 			if(!scopes[scope]){
-				console.warn("Whisker.clear: " + scope + " is not a saved scope!");
+				console.warn("Whisker.clear: '" + scope + "' is not a saved scope!");
 				return;
 			}
 			delete scopes[scope];
@@ -75,7 +75,7 @@ function Whisker(){
 	handler.load = function load(scope){
 		var key;
 		if(scope && !scopes[scope]){
-			console.warn("Whisker.load: " + scope + " is not a saved scope!");
+			console.warn("Whisker.load: '" + scope + "' is not a saved scope!");
 			return;
 		} else if(!scope){
 			console.warn("Whisker.load: No name given to scope!");
