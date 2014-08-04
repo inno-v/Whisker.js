@@ -4,6 +4,28 @@ Quick, light, and easy way to fasten the keyboard to your page.
 * Little overhead!
 * Less than 100 lines!
 * No more looking up key codes!
+	- Checkout [Whisker's convention](https://github.com/JrFolk/Whisker.js/blob/master/keymap.js)
+
+# API
+```javascript
+// Instantiate
+var whisker = Whisker();
+
+// Create a keymap-object with 'onkeydown' & 'onkeyup' properties
+keymap = {
+	onkeydown : {
+		'key' : function
+	},
+	onkeyup : {
+		'key' : function
+	}
+}
+
+// Bind keys
+whisker.map(keymap);
+whisker.
+
+```
 
 # Usage
 
