@@ -1,9 +1,9 @@
 # Whisker.js
 
 Quick, light, and easy way to fasten the keyboard to your page.
-Little overhead!
-Less than 100 lines!
-No more looking up key codes!
+* Little overhead!
+* Less than 100 lines!
+* No more looking up key codes!
 
 # Usage
 
