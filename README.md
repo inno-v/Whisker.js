@@ -4,7 +4,7 @@ Quick, light, and easy way to fasten the keyboard to your page.
 
 # Usage
 
-##### Connect Whisker page-wide with jQuery:
+##### Connect Whisker document-wide with jQuery:
 ```javascript
 $(document).ready(function(){
 	var whisker = Whisker();
@@ -12,6 +12,8 @@ $(document).ready(function(){
 	$(document).on('keyup', whisker);
 });
 ```
+You can also connect Whisker like any other event lister, say, to elements such as forms.
+
 Every invocation of `Whisker();` will create a new Whisker instace.
 
 ### Mapping the keyboard
