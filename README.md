@@ -2,6 +2,9 @@
 Quick, light, and easy way to fasten the keyboard to your page.
 * Little overhead!
 	- Seriously small, but easy to read
+* Unobtrusive!
+	- No special handling of modifier keys or cross-browser fixes.  The keyboard will behave as it always has in any browser.
+	- Just replace your old listeners with Whisker.
 * No more looking up key codes!
 	- Checkout [Whisker's convention](https://github.com/JrFolk/Whisker.js/blob/master/keymap.js)
 
