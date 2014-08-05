@@ -1,12 +1,12 @@
 # Whisker.js
 Quick, light, and easy way to fasten the keyboard to your page.
+* No more looking up key codes!
+	- Checkout [Whisker's convention](https://github.com/JrFolk/Whisker.js/blob/master/keymap.js)
 * Little overhead!
 	- Seriously small, but easy to read
 * Unobtrusive!
 	- No special handling of modifier keys or specific-browsers.  The keyboard will behave as it always has in any browser.  Whisker leaves that up to you.
 	- Just put a Whisker instance where you would put listener callbacks and map your key functions.
-* No more looking up key codes!
-	- Checkout [Whisker's convention](https://github.com/JrFolk/Whisker.js/blob/master/keymap.js)
 
 # API
 ```javascript
