@@ -7,11 +7,11 @@ function Whisker(){
 		var key = keymap[evt.which];
 		if(evt.type === 'keydown' && typeof onkeydown[key] === 'function'){
 			evt.preventDefault();
-			onkeydown[key]();
+			onkeydown[key](evt);
 		}
 		else if(evt.type == 'keyup' && typeof onkeyup[key] === 'function'){
 			evt.preventDefault();
-			onkeyup[key]();
+			onkeyup[key](evt);
 		}
 	};
 
