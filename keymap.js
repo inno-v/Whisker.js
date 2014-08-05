@@ -102,7 +102,7 @@ var keymap = {
 "189": "-",
 "190": ".",
 "191": "/",
-"192": "`",//grave accent
+"192": "`",//grave accent a.k.a. backtick
 "219": "{",
 "220": "\\",//backslash
 "221": "}",
