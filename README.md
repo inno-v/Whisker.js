@@ -13,10 +13,10 @@ var whisker = Whisker();
 // Create a keymap-object with 'onkeydown' & 'onkeyup' properties
 keymap = {
 	onkeydown : {
-		'key' : function
+		'key' : function(event){}
 	},
 	onkeyup : {
-		'key' : function
+		'key' : function(event){}
 	}
 }
 
