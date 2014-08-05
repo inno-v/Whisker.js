@@ -1,3 +1,8 @@
+/*///
+This is for reference only.  
+Don't bother including it if you choose to use Whisker.js
+/*///
+
 var keymap = {
 "8": "backspace",//delete on mac
 "9": "tab",
