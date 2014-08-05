@@ -1,5 +1,4 @@
 # Whisker.js
-
 Quick, light, and easy way to fasten the keyboard to your page.
 * Little overhead!
 	- Seriously small, but easy to read
@@ -75,8 +74,7 @@ var user_mode = {
 whisker.map(user_mode);
 // Old mappings will be overwritten without error
 ```
-If not overwritten, old mappings will persist on a per-key basis.  That means that as long as 
-a keys are not overwritten, you can use several mappings!
+If not overwritten, old mappings will persist on a per-key basis.  That means that as long as keys are not overwritten, you can continue to add keymaps on top of one another.
 
 ### Unmapping
 
