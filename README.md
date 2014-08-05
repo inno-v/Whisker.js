@@ -39,6 +39,7 @@ $(document).ready(function(){
 	var whisker = Whisker();
 	$(document).on('keydown', whisker);
 	$(document).on('keyup', whisker);
+	/* ... */
 });
 ```
 Every invocation of `Whisker();` will create a new Whisker instance.
