@@ -9,7 +9,7 @@ function Whisker(){
 			evt.preventDefault();
 			onkeydown[key](evt);
 		}
-		else if(evt.type == 'keyup' && typeof onkeyup[key] === 'function'){
+		else if(evt.type === 'keyup' && typeof onkeyup[key] === 'function'){
 			evt.preventDefault();
 			onkeyup[key](evt);
 		}
