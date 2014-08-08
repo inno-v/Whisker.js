@@ -78,7 +78,7 @@ var user_mode = {
 whisker.map(user_mode);
 // Old mappings will be overwritten without error
 ```
-Old mappings will persist on a per-key basis; As long as keys are not overwritten, you can continue to add keymaps on top of one another without conflict.
+Unless overwritten, old mappings will persist on a per-key basis; You can continue to add keymaps on top of one another without conflict.
 
 ### Unmapping
 
