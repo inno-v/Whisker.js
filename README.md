@@ -62,7 +62,7 @@ whisker.map({
 });
 ```
 
-##### Passing an object with appropriate `onkeydown` & `onkeyup` properties:
+##### Passing an object with appropriate `onkeydown` and/or `onkeyup` properties:
 ```Javascript
 function enter_pressed(){console.log("Enter pressed!");};
 var user_mode = {
@@ -70,7 +70,7 @@ var user_mode = {
 	method : function(){/* some method */},
 	onkeydown : {
 		'enter' : enter_pressed,
-		'space' : function(){console.log("Space pressed!")},
+		',' : function(){console.log("Comma pressed!")},
 	},
 }
 whisker.map(user_mode);
