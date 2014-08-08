@@ -5,7 +5,7 @@ Quick, light, and easy way to fasten the keyboard to your page.
 * Little overhead!
 	- Seriously small, but easy to read
 * Unobtrusive!
-	- No special handling of modifier keys or specific-browsers.  The keyboard will behave as it always has in any browser.  Whisker leaves that up to you.
+	- No special handling of modifier keys or specific browsers.  The keyboard will behave as it always has in any browser.  Whisker leaves that up to you.
 	- Just put a Whisker instance where you would put listener callbacks and map your key functions.
 
 # API
@@ -78,7 +78,7 @@ var user_mode = {
 whisker.map(user_mode);
 // Old mappings will be overwritten without error
 ```
-If not overwritten, old mappings will persist on a per-key basis.  That means that as long as keys are not overwritten, you can continue to add keymaps on top of one another.
+Old mappings will persist on a per-key basis; As long as keys are not overwritten, you can continue to add keymaps on top of one another without conflict.
 
 ### Unmapping
 
@@ -111,6 +111,7 @@ $('input').on('focusout', whisker.resume);
 // Switch scopes
 whisker.save('some_scope');
 whisker.load('another_scope');
+
 // Do some stuff with another scope
 
 whisker.load('non-existent_scope');
