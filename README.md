@@ -57,20 +57,20 @@ whisker.map({
 		'space' : function(){console.log("Space pressed!");},
 	},
 	onkeyup : {
-		'space' : function(){console.log("Space released!");},
+		'enter' : function(){console.log("Enter released!");},
 	},
 });
 ```
 
 ##### Passing an object with appropriate `onkeydown` and/or `onkeyup` properties:
 ```Javascript
-function enter_pressed(){console.log("Enter pressed!");};
+function comma_pressed(){console.log("Comma pressed!");};
 var user_mode = {
 	prop : some_property,
 	method : function(){/* some method */},
 	onkeydown : {
-		'enter' : enter_pressed,
-		',' : function(){console.log("Comma pressed!")},
+		'a' : function(console.log("'A' key pressed!")),
+		',' : comma_pressed,
 	},
 }
 whisker.map(user_mode);
