@@ -69,8 +69,8 @@ var user_mode = {
 	prop : some_property,
 	method : function(){/* some method */},
 	onkeydown : {
-		'a' : function(){console.log("'A' key pressed!");},
 		',' : comma_pressed,
+		'a' : function(){console.log("'A' key pressed!");},
 	},
 }
 whisker.map(user_mode);
